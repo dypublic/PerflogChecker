@@ -23,7 +23,7 @@ los	length of stay	number	Optional
 iata	IATA send to supplier	number string	Optional
 """
 
-class FieldProps(var name: String, )
+class FieldProps(var name: String, var required :Boolean, var validator: FieldValidator)
 
 class GetAvailability {
     var name: String = "GetAvailability"
